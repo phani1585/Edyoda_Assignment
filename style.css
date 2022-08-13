@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+  }
+  body {
+    background-color: #f2f6ff;
+  }
+  /*Logo header styles*/
+  header {
+    background-color: #fff;
+    padding: 16px 78px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid rgba(170, 169, 169, 0.305);
+  }
+  .explore-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    color: #000;
+  }
+  .explore-text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .logo-edyoda {
+    width: 130px;
+    font-size: 32px;
+    background: -webkit-linear-gradient(269deg, #0048ff, #0096ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    line-height: 0.9;
+  }
+  .logo-stories {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 0%;
+  }
+  .fa-chevron-down {
+    padding-left: 8px;
+  }
+  /*main-Container styles*/
+  main {
+    width: 100%;
+  }
+  .main-box {
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  /*main-heading styles*/
+  .filter-container {
+    width: 30px;
+    height: 30px;
+  }
+  .filter-image {
+    width: 100%;
+  }
+  .filter-box {
+    display: flex;
+    align-items: center;
+  }
+  .trending-head {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 25px 0;
+  }
+  .filter-text {
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 600;
+  }
+  /*button Styling*/
+  .btn-container {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .cat-buttons {
+    font-size: 14px;
+    background: none;
+    color: #0084ff;
+    border: 1px solid #0084ff;
+    border-radius: 15px;
+    width: auto;
+    padding: 6px 14px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .first-cat-button {
+    font-size: 14px;
+    background-color: #0084ff;
+    color: #fff;
+    border: 1px solid #0084ff;
+    border-radius: 15px;
+    width: auto;
+    padding: 6px 14px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .cat-buttons:hover {
+    background-color: #0084ff;
+    color: #fff;
+  }
+  /*Cards styling*/
+  .card {
+    max-width: 28%;
+    min-height: 370px;
+    font-size: 14px;
+    background-color: white;
+    margin: 0px 25px 25px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px lightgray;
+    cursor: pointer;
+  }
+  .card-image-container {
+    width: 100%;
+    height: 176px;
+  }
+  .card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .cards-mega-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .card-desc-container {
+    padding: 15px 24px;
+  }
+  .card-author {
+    color: #0096ff;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .author-cont {
+    padding-top: 4px;
+    font-weight: 300;
+  }
+  .card-desc {
+    font-weight: 400;
+    line-height: 1.43;
+    color: rgba(0, 0, 0, 6);
+    margin: 4px 0;
+  }
+  footer {
+    width: 100%;
+    padding: 50px 180px;
+    background-color: #172146;
+    margin-top: 30px;
+  }

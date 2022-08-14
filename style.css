@@ -1,164 +1,306 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-  }
-  body {
-    background-color: #f2f6ff;
-  }
-  /*Logo header styles*/
-  header {
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #ecf1fe;
+}
+
+/* Header Styles */
+
+header{
+    width: 100%;
+    height: 80px;
     background-color: #fff;
     padding: 16px 78px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 1.5px solid rgba(170, 169, 169, 0.305);
-  }
-  .explore-menu {
+}
+
+.header-wrapper{
     display: flex;
     align-items: center;
-    margin-left: 50px;
-    color: #000;
-  }
-  .explore-text {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .logo-edyoda {
+    justify-content: space-between;
+}
+
+.edyoda-quote{
+    font-size: 16px;
+    color: #999797;
+    font-weight: 400;
+}
+
+.go-mainsite-btn{
+    margin-left: 60px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #0084ff;
+    color: #fff;
+    width: auto;
+    padding: 12px 26px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-wrapper{
     width: 130px;
+}
+
+.logo-edyoda{
+    width: 100%;
     font-size: 32px;
-    background: -webkit-linear-gradient(269deg, #0048ff, #0096ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0084ff;
     font-weight: 900;
-    line-height: 0.9;
-  }
-  .logo-stories {
+    text-transform: uppercase;
+}
+
+.logo-stories{
     font-style: italic;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 0%;
-  }
-  .fa-chevron-down {
-    padding-left: 8px;
-  }
-  /*main-Container styles*/
-  main {
-    width: 100%;
-  }
-  .main-box {
-    width: 70%;
-    margin: 0 auto;
-    height: 100%;
-  }
-  /*main-heading styles*/
-  .filter-container {
-    width: 30px;
-    height: 30px;
-  }
-  .filter-image {
-    width: 100%;
-  }
-  .filter-box {
-    display: flex;
-    align-items: center;
-  }
-  .trending-head {
-    font-size: 35px;
-    font-weight: 600;
-    margin: 25px 0;
-  }
-  .filter-text {
-    font-size: 16px;
-    margin-left: 8px;
-    font-weight: 600;
-  }
-  /*button Styling*/
-  .btn-container {
-    width: 90%;
-    margin-top: 10px;
-    margin-bottom: 25px;
-  }
+}
 
-  .cat-buttons {
+.dropdown-menu-wrapper{
+    margin-left: 60px;
+}
+
+.dropdown-name{
+    color: #000;
+    margin-right: 8px;
     font-size: 14px;
-    background: none;
-    color: #0084ff;
-    border: 1px solid #0084ff;
-    border-radius: 15px;
-    width: auto;
-    padding: 6px 14px;
-    margin: 5px;
-    cursor: pointer;
-  }
-  .first-cat-button {
-    font-size: 14px;
-    background-color: #0084ff;
-    color: #fff;
-    border: 1px solid #0084ff;
-    border-radius: 15px;
-    width: auto;
-    padding: 6px 14px;
-    margin: 5px;
-    cursor: pointer;
-  }
-  .cat-buttons:hover {
-    background-color: #0084ff;
-    color: #fff;
-  }
-  /*Cards styling*/
-  .card {
-    max-width: 28%;
-    min-height: 370px;
-    font-size: 14px;
-    background-color: white;
-    margin: 0px 25px 25px 0;
+    font-weight: 500;
+}
+
+/* Main Styles */
+
+main{
+    padding: 2% 16%;
+}
+
+.main-heading{
+    color: #000;
+    font-weight: 600;
+    margin: 30px 0px;
+}
+
+
+/* trendig post */
+
+.trending-posts{
+    display: flex;
+    margin: 2%;
+}
+
+.left-trending-post{
+    width: 65%;
+    height: auto;
+    margin-right: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px lightgray;
+    overflow: hidden;
     cursor: pointer;
-  }
-  .card-image-container {
+}
+
+.left-trending-post img{
     width: 100%;
-    height: 176px;
-  }
-  .card-image {
+    border-radius: 5px;
+}
+
+.right-trendingpost-wrapper{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-trendingposts{
     width: 100%;
-    height: 100%;
-    border-radius: 5px 5px 0px 0px;
-  }
-  .cards-mega-container {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.right-trendingposts img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.filter-text{
+    color: #000;
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fa-filter{
+    color: #0077e7;
+}
+
+.category-container{
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 16px;
+}
+
+.category-btn{
+    font-size: .75em;
+    color: #0084ff;
+    width: auto;
+    padding: 6px 14px;
+    border-radius: 15px;
+    border: 1px solid #0084ff;
+    background:none;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.category-active{
+    background-color: #0084ff;
+    color: #fff;
+}
+
+.category-btn:hover{
+    background-color: #0084ff;
+    color: #fff;
+}
+
+/* cards styling */
+
+.cards-wrapper{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .card-title {
-    font-size: 18px;
+}
+
+.card{
+    width: 31.3%;
+    min-width: 150px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid rgba(0,168,255,.3);
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 1em;
+}
+
+.card-img{
+    width: 100%;
+    height: 176px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-text-section{
+    padding: 10px 24px;
+}
+
+.card-heading{
+    font-size: 20px;
+    text-align: left;
     font-weight: 600;
-  }
-  .card-desc-container {
-    padding: 15px 24px;
-  }
-  .card-author {
+}
+
+.info-wrapper{
+    padding-top: 4px;
+}
+
+.card-author{
     color: #0096ff;
     font-size: 14px;
     font-style: italic;
     font-weight: 500;
-  }
-  .author-cont {
-    padding-top: 4px;
+}
+
+.card-date{
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
     font-weight: 300;
-  }
-  .card-desc {
+}
+
+.card-discription{
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.43;
-    color: rgba(0, 0, 0, 6);
+    color: rgba(0,0,0,0.6);
     margin: 4px 0;
-  }
-  footer {
-    width: 100%;
-    padding: 50px 180px;
+}
+
+/* footer styles */
+
+footer{
     background-color: #172146;
-    margin-top: 30px;
-  }
+    Padding: 80px 16%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-details{
+    margin: 40px;
+}
+
+.footer-details ul{
+    list-style: none;
+}
+
+.footer-details ul li {
+    margin: 10px;
+}
+
+.footer-details ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.footer-heads{
+    color: hsla(0,0%,100%,.5);
+    font-weight: 600;
+    font-size: 1.17em;
+    text-transform: uppercase;
+}
+
+.address{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.social-icons{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.company-copy-right{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.company-mail{
+    display: flex;
+    align-items: center;
+}
+
+.fa-brands{
+    margin: 8px;
+}
